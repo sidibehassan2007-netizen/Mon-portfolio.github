@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan Sidibé | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: white;
+    line-height: 1.7;
+}
+
+/* NAVIGATION */
+
+header {
+    background: #111c30;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+}
+
+.logo span {
+    color: #00bfff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+/* ACCUEIL */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(120deg, #0b1120, #152d4c);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.intro {
+    color: #00bfff;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #00bfff;
+}
+
+.hero h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #c5d0df;
+    margin-bottom: 25px;
+}
+
+/* BOUTONS */
+
+.btn {
+    display: inline-block;
+    background: #00bfff;
+    color: #07111f;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* SECTIONS */
+
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #00bfff;
+}
+
+.section > p {
+    max-width: 800px;
+    margin: auto;
+    color: #c5d0df;
+}
+
+/* CARTES */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card {
+    background: #15243a;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #263d5a;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #00bfff;
+}
+
+.card h3 {
+    color: #00bfff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #c5d0df;
+}
+
+/* CONTACT */
+
+.contact {
+    background: #111c30;
+}
+
+.contact p {
+    margin-bottom: 15px;
+}
+
+/* PIED DE PAGE */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #080e19;
+    color: #9ba9bb;
+}
+
+/* TELEPHONE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+}
+</style>
+
+
+</head>
+
+<body>
+
+    <header>
+         <nav class="navbar">
+            <h2 class="logo">Hassan<span>.</span></h2>
+       
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <p class="intro">BIENVENUE SUR MON PORTFOLIO</p>
+
+            <h1>Hassan <span>Sidibé</span></h1>
+
+            <h2>Étudiant en Licence Reseaux & telecommunication||Intelligence artificielle (IA)</h2>
+
+            <p>
+                Passionné par les technologies numériques,
+                l'analyse des données et les réseaux informatiques.
+                Je développe progressivement mes compétences
+                à travers des formations et des projets pratiques.
+            </p>
+
+            <a href="#projets" class="btn">Découvrir mes projets</a>
+        </div>
+    </section>
+
+    <section id="apropos" class="section">
+        <h2>À propos de moi</h2>
+
+        <p>
+            Je suis étudiant en Licence Informatique à HEC Abidjan.
+            Je m'intéresse particulièrement à l'analyse des données,
+            aux réseaux informatiques et aux nouvelles technologies.
+
+            Mon objectif est de développer mes connaissances,
+            acquérir de l'expérience professionnelle et participer
+            à des projets innovants.
+        </p>
+    </section>
+
+    <section id="competences" class="section">
+        <h2>Mes compétences</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Data Analytics</h3>
+                <p>
+                    Analyse et interprétation des données,
+                    statistiques et bases de données.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Réseaux et systèmes</h3>
+                <p>
+                    Notions de réseaux informatiques,
+                    architecture réseau, systèmes et administration.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Outils informatiques</h3>
+                <p>
+                    HTML5, CSS3, C, C#, Visual Studio Code,
+                    bases de programmation et algorithmique.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cybersécurité</h3>
+                <p>
+                    Notions de sécurité informatique,
+                    protection des systèmes et sensibilisation
+                    aux menaces numériques.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Intelligence artificielle</h3>
+                <p>
+                    Découverte des outils d'intelligence artificielle
+                    et de leurs applications.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projets" class="section">
+        <h2>Mes projets pratiques</h2> 
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Business & Creation</h3>
+                <p>
+                    Création d'un site web et de produits digitaux 
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Projet Data</h3>
+                <p>
+                    Espace réservé à mes futurs projets
+                    d'analyse et de traitement des données.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Projet Réseaux</h3>
+                <p>
+                    Espace réservé à mes travaux pratiques
+                    en réseaux et systèmes.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Me contacter</h2>
+
+        <p>Vous souhaitez échanger avec moi ou discuter d'une opportunité d'un projet ?</p>
+
+        <p>Email : sidibehassan2007@email.com</p>
+
+<a href="https://wa.me/+225 0758446789"
+   target="_blank"
+   class="btn">
+   Me contacter sur WhatsApp
+</a>
+
+
+
+<p>Whatsapp : 0758446789</p>
+        <p>Localisation : Abidjan, Côte d'Ivoire</p>
+
+        <a href="https://www.linkedin.com/" target="_blank" class="btn">
+            Mon LinkedIn
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2026 Hassan Sidibé - Informaticien</p>
+    </footer>
+
+</body>
+</html>
+</body>
+</html>
